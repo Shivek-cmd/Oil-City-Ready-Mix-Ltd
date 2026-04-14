@@ -96,15 +96,16 @@
   }
 
   .site-header__cta.btn-outline {
-    background: transparent;
-    color: var(--color-primary);
+    background: var(--color-primary);
+    color: #0A0F1C;
     border-color: var(--color-primary);
   }
 
   .site-header__cta.btn-outline:hover {
-    background: var(--color-primary);
+    background: var(--color-accent);
+    border-color: var(--color-accent);
     color: #0A0F1C;
-    border-color: var(--color-primary);
+    box-shadow: 0 0 24px rgba(201,169,98,0.35);
   }
 
   /* ── Burger button (mobile) ── */
@@ -223,7 +224,7 @@
   <div class="site-header__inner">
 
     <!-- Logo -->
-    <a href="/home/home.html" class="site-logo" aria-label="Oil City Ready Mix Ltd. – Home">
+    <a href="https://crm.bizbull.ai/v2/preview/sQeQTETgXhipcpk8XUOG?notrack=true" class="site-logo" aria-label="Oil City Ready Mix Ltd. – Home">
       <img src="https://assets.cdn.filesafe.space/pDreylt0DE2IrmVNC9Mn/media/69de86f8acf21ea88ae0c448.png" alt="Oil City Ready Mix Ltd." class="site-logo__img" />
     </a>
 
@@ -231,6 +232,7 @@
     <nav class="site-nav" aria-label="Main Navigation">
       <a href="#about"      class="site-nav__link">About</a>
       <a href="#services"   class="site-nav__link">Services</a>
+      <a href="#corporate"  class="site-nav__link">Corporate</a>
       <a href="#calculator" class="site-nav__link">Calculator</a>
       <a href="#contact"    class="site-nav__link">Contact</a>
     </nav>
@@ -258,6 +260,7 @@
 <nav class="site-mobile-nav" id="mobile-nav" aria-label="Mobile Navigation" aria-hidden="true">
   <a href="#about"          class="site-mobile-nav__link">About</a>
   <a href="#services"       class="site-mobile-nav__link">Services</a>
+  <a href="#corporate"      class="site-mobile-nav__link">Corporate</a>
   <a href="#calculator"     class="site-mobile-nav__link">Calculator</a>
   <a href="#contact"        class="site-mobile-nav__link">Contact</a>
   <a href="#quote"          class="btn btn-primary btn-lg site-mobile-nav__cta">Request a Quote</a>
@@ -299,7 +302,7 @@
     }
 
     /* Active link highlight based on scroll position */
-    var sections = ['about', 'services', 'calculator', 'quote', 'contact'];
+    var sections = ['about', 'services', 'corporate', 'calculator', 'quote', 'contact'];
     var navLinks = document.querySelectorAll('.site-nav__link');
 
     window.addEventListener('scroll', function () {

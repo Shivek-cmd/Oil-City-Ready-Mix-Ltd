@@ -96,17 +96,6 @@ input, textarea, select { font-family: var(--font-body); }
   margin-bottom: var(--space-5);
 }
 
-/* ── Divider line ── */
-.section-label::before {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 1px;
-  background: var(--color-primary);
-  vertical-align: middle;
-  margin-right: var(--space-3);
-  opacity: 0.7;
-}
 
 /* ── Buttons ── */
 .btn {

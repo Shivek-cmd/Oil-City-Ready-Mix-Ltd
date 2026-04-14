@@ -175,14 +175,46 @@
 
   .footer-bottom__copy {
     font-size: var(--text-xs);
-   color: var(--color-text);
+    color: var(--color-text);
     letter-spacing: 0.04em;
   }
 
   .footer-bottom__sub {
     font-size: var(--text-xs);
-     color: var(--color-text);
+    color: var(--color-text);
     letter-spacing: 0.04em;
+  }
+
+  .footer-bottom__powered {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: var(--text-xs);
+    letter-spacing: 0.04em;
+  }
+
+  .footer-bottom__powered-text {
+    color: var(--color-text-subtle);
+    opacity: 0.7;
+  }
+
+  .footer-bottom__powered-logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-bottom__powered-logo-img {
+    height: 36px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .footer-bottom__powered-brand {
+    font-weight: var(--weight-semibold);
+    color: var(--color-primary);
+    letter-spacing: 0.06em;
   }
 
   /* ── Responsive ── */
@@ -214,11 +246,11 @@
 
     <!-- Brand -->
     <div class="footer-brand">
-      <a href="/home/home.html" class="footer-brand__logo-link" aria-label="Oil City Ready Mix Ltd. – Home">
+      <a href="https://crm.bizbull.ai/v2/preview/sQeQTETgXhipcpk8XUOG?notrack=true" class="footer-brand__logo-link" aria-label="Oil City Ready Mix Ltd. – Home">
         <img src="https://assets.cdn.filesafe.space/pDreylt0DE2IrmVNC9Mn/media/69de86f8acf21ea88ae0c448.png" alt="Oil City Ready Mix Ltd." class="footer-brand__logo" />
       </a>
       <p class="footer-brand__tagline">
-        Your trusted concrete partner — delivering high-quality ready mix solutions
+        Your trusted concrete partner, delivering high-quality ready mix solutions
         for civil, commercial, and residential projects across Edmonton.
       </p>
       <p class="footer-brand__parent">
@@ -233,6 +265,7 @@
         <li><a href="/home/home.html">Home</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#corporate">Corporate</a></li>
         <li><a href="#calculator">Calculator</a></li>
         <li><a href="#quote">Request a Quote</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -299,9 +332,22 @@
     <span class="footer-bottom__copy">
       &copy; <span id="footer-year"></span> Oil City Ready Mix Ltd. All rights reserved.
     </span>
-    <span class="footer-bottom__sub">
-      A subsidiary of Oil City Holding Ltd.
-    </span>
+   <span class="footer-bottom__powered">
+  <span class="footer-bottom__powered-text">Powered by</span>
+
+  <span class="footer-bottom__powered-logo-wrap">
+    <img src="https://assets.cdn.filesafe.space/pDreylt0DE2IrmVNC9Mn/media/69de954c80b446d0fb769ef2.webp"
+         alt="Bizbull AI"
+         class="footer-bottom__powered-logo-img" />
+  </span>
+
+  <a href="https://bizbull.ai/"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="footer-bottom__powered-brand">
+     Bizbull AI
+  </a>
+</span>
   </div>
 
 </footer>
