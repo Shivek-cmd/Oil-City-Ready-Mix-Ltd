@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(del \"d:\\\\Chrishan Solution\\\\Oil City Ready Mix Ltd\\\\conversation_ai\\\\knowledge_base\\\\kb_03_faq.md\")"
+    ]
+  }
+}

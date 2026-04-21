@@ -9,6 +9,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -290,6 +291,18 @@ input, textarea, select { font-family: var(--font-body); }
   transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
 }
 .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* On mobile, collapse horizontal slides to vertical to prevent overflow */
+@media (max-width: 767px) {
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(32px);
+  }
+  .reveal-left.visible,
+  .reveal-right.visible {
+    transform: translateY(0);
+  }
+}
 
 /* Scale in */
 .reveal-scale {
