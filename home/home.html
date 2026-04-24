@@ -45,7 +45,7 @@
       "postalCode": "T9E 7M6",
       "addressCountry": "CA"
     },
-    "openingHours": "Mo-Sa 08:00-17:00",
+    "openingHours": ["Mo-Fr 08:00-17:00", "Sa 08:00-13:00"],
     "parentOrganization": { "@type": "Organization", "name": "Oil City Holding Ltd." }
   }
   </script>
@@ -79,7 +79,7 @@
   <!-- Background video -->
   <div class="hero-video-wrap" aria-hidden="true">
   <video class="hero-video" autoplay muted loop playsinline>
-    <source src="https://assets.cdn.filesafe.space/pDreylt0DE2IrmVNC9Mn/media/69de869e3677cf2ce2669162.mp4" type="video/mp4">
+    <source src="../assets/Concrete_poured_onto_202604250012.mp4" type="video/mp4">
   </video>
   <div class="hero-video-overlay"></div>
 </div>
@@ -97,11 +97,14 @@
   <span class="hero-line reveal delay-2">Delivering <span class="hero-line--gold">Excellence.</span></span>
 </h1>
 
-    <p class="hero-sub reveal delay-4">
-      High-quality ready mix concrete for civil, commercial, and residential
-      projects across Edmonton. Every pour is built on precision,
-      reliability, and results.
-    </p>
+    <div class="hero-sub-grid reveal delay-4">
+      <p class="hero-sub">
+        Oil City Ready Mix Ltd. is an emerging and trusted name in the Edmonton concrete industry. Serving commercial, civil, and residential construction projects, we are committed to delivering high-quality ready mix solutions tailored to each client's needs.
+      </p>
+      <p class="hero-sub hero-sub--bordered">
+        Our work is defined by reliability, consistency, and a strong focus on customer needs—ensuring every project is completed to the highest standards. At Oil City Ready Mix Ltd., we take pride in letting our results speak for themselves.
+      </p>
+    </div>
 
     <div class="hero-ctas reveal delay-5">
       <a href="#quote"    class="btn btn-primary btn-lg">Request a Quote</a>
@@ -122,55 +125,22 @@
 
 
     <!-- ═══════════════════════════════════════════
-         SECTION 2 · STATS STRIP
+         SECTION 2 · MISSION STATEMENT
     ═══════════════════════════════════════════ -->
-    <section class="stats-strip" id="stats" aria-label="Key statistics">
+    <section class="mission-strip" id="stats" aria-label="Mission Statement">
       <div class="container">
-        <div class="stats-grid">
-
-          <div class="stat-item reveal">
-            <span class="stat-number">
-              <span class="counter" data-target="20">20</span>–<span class="counter" data-target="45">45</span>
-            </span>
-            <span class="stat-unit">MPa</span>
-            <span class="stat-label">Concrete Strength Range</span>
-          </div>
-
-          <div class="stat-divider" aria-hidden="true"></div>
-
-          <div class="stat-item reveal delay-1">
-            <span class="stat-number">
-              <span class="counter" data-target="1000">1000</span>
-            </span>
-            <span class="stat-unit">m³</span>
-            <span class="stat-label">Max Single Pour Capacity</span>
-          </div>
-
-          <div class="stat-divider" aria-hidden="true"></div>
-
-          <div class="stat-item reveal delay-2">
-            <span class="stat-number">
-              <span class="counter" data-target="3">3</span>
-            </span>
-            <span class="stat-unit">Sectors</span>
-            <span class="stat-label">Civil · Commercial · Residential</span>
-          </div>
-
-          <div class="stat-divider" aria-hidden="true"></div>
-
-          <div class="stat-item reveal delay-3">
-            <span class="stat-number">6</span>
-            <span class="stat-unit">Days</span>
-            <span class="stat-label">Mon – Sat, 8 AM to 5 PM</span>
-          </div>
-
+        <div class="mission-inner reveal">
+          <span class="mission-label">Mission Statement</span>
+          <blockquote class="mission-quote">
+            "Our mission is to deliver high-quality concrete solutions with exceptional service that consistently exceeds customer expectations."
+          </blockquote>
         </div>
       </div>
     </section>
 
 
     <!-- ═══════════════════════════════════════════
-         SECTION 3 · ABOUT (split layout + image)
+         SECTION 3 · ABOUT (left text, right image)
     ═══════════════════════════════════════════ -->
     <section class="section about-section" id="about" aria-label="About Oil City Ready Mix">
       <div class="container">
@@ -181,31 +151,20 @@
             <span class="section-label reveal">Who We Are</span>
 
             <h2 class="about-heading reveal delay-1">
-              Your Trusted Concrete Partner
+              Oil City Ready Mix LTD – Your Trusted Concrete Partner
             </h2>
 
             <p class="about-body reveal delay-2">
-              Our goal is to be a leading provider of high-quality concrete solutions
-              in the Edmonton region. In a short span of time, we've become a trusted
-              supplier for builders and contractors. Our team is committed to delivering
-              reliable products and exceptional service on every project, consistently
-              striving to exceed customer expectations.
+              At Oil City Ready Mix LTD, our goal is to be a leading provider of high-quality concrete solutions in the Edmonton region. In a short span of time, we have become a trusted supplier for builders and contractors. Our team is committed to delivering reliable products and exceptional service on every project, consistently striving to exceed customer expectations.
             </p>
             <p class="about-body reveal delay-3">
-              We prioritize safety, quality, and strict adherence to industry standards,
-              ensuring every job is completed with precision and care. With competitive
-              pricing and a customer-focused approach, we work closely with our customers
-              to meet their project requirements, timelines, and overall expectations.
+              We prioritize safety, quality, and strict adherence to industry standards, ensuring every job is completed with precision and care. With competitive pricing and a customer-focused approach, we work closely with our customers to meet their project requirements, timelines, and overall expectations.
             </p>
 
-            <blockquote class="about-quote reveal delay-4">
-              <p>"Our mission is to deliver high-quality concrete solutions with exceptional service that consistently exceeds customer expectations."</p>
-            </blockquote>
-
-            <a href="#services" class="btn btn-outline reveal delay-5">Explore Our Services</a>
+            <a href="#services" class="btn btn-outline reveal delay-4">Explore Our Services</a>
           </div>
 
-          <!-- Right: image stack -->
+          <!-- Right: image -->
           <div class="about-images reveal-right delay-1">
             <div class="about-img-main">
               <img
@@ -215,7 +174,23 @@
                 width="900" height="660"
               />
             </div>
-            <div class="about-img-accent reveal-scale delay-3">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 3b · WHY (right text, left image)
+    ═══════════════════════════════════════════ -->
+    <section class="section why-intro-section" aria-label="Why choose Oil City Ready Mix">
+      <div class="container">
+        <div class="about-layout">
+
+          <!-- Left: image -->
+          <div class="about-images reveal-left delay-1">
+            <div class="about-img-main">
               <img
                 src="https://assets.cdn.filesafe.space/pDreylt0DE2IrmVNC9Mn/media/69de87b03d447256448a8745.jpg"
                 alt="Ready mix concrete being poured on site"
@@ -223,10 +198,22 @@
                 width="480" height="340"
               />
             </div>
-            <div class="about-img-badge">
-              <span class="about-img-badge__num">20+</span>
-              <span class="about-img-badge__text">MPa mixes<br>available</span>
-            </div>
+          </div>
+
+          <!-- Right: text -->
+          <div class="about-text">
+            <span class="section-label reveal">Why Choose Us</span>
+
+            <h2 class="about-heading reveal delay-1">
+              Why We're Our Customers' First Choice
+            </h2>
+
+            <p class="about-body reveal delay-2">
+              At Oil City Ready Mix Ltd., our foundation is built on delivering consistent quality and complete customer satisfaction. With a knowledgeable and experienced team, we focus on understanding and meeting our customers' needs on every project.
+            </p>
+            <p class="about-body reveal delay-3">
+              We are committed to providing reliable service, high-quality concrete solutions, and timely delivery—ensuring projects are completed efficiently and to the highest industry standards. Our dedication to going beyond expectations is what makes us a trusted choice for builders and contractors.
+            </p>
           </div>
 
         </div>
@@ -240,14 +227,27 @@
     <section class="section section--alt services-section" id="services" aria-label="Services">
       <div class="container">
 
-        <div class="section-header">
+        <!-- Header: full-width -->
+        <div class="services-header">
           <span class="section-label reveal">Our Services &amp; Products</span>
-          <h2 class="reveal delay-1">Concrete Solutions Built<br>for Every Project</h2>
-          <p class="section-sub reveal delay-2">
-            From municipal infrastructure to residential foundations, exactly the
-            strength and volume your project demands.
-          </p>
+          <h2 class="reveal delay-1">Our Services &amp; Products</h2>
+          <p class="services-header__intro reveal delay-2">At Oil City Ready Mix Ltd., we provide a comprehensive range of high-quality ready mix concrete solutions tailored to meet the diverse needs of our clients across civil, municipal, commercial, and residential projects.</p>
         </div>
+
+        <!-- Order Sizes + Concrete Strengths — open text columns -->
+        <div class="services-specs">
+          <div class="services-spec reveal delay-1">
+            <h3 class="services-spec__title">Order Sizes</h3>
+            <p class="services-spec__body">We are equipped to handle projects of all scales, with the capacity to efficiently execute orders ranging from as small as 1 cubic meter to large-scale pours of up to 1,000 cubic meters. Our fleet includes trailers and batch mixers of all sizes, enabling us to deliver every order—small or large—reliably and on time.</p>
+          </div>
+          <div class="services-spec reveal delay-2">
+            <h3 class="services-spec__title">Concrete Strengths</h3>
+            <p class="services-spec__body">Our ready mix concrete is available in a range of strengths from 20 MPa to 45 MPa, ensuring suitability for a wide variety of structural and non-structural applications. Each mix is carefully designed and produced to meet industry standards while aligning with specific project requirements.</p>
+          </div>
+        </div>
+
+        <!-- Types of Offerings -->
+        <h3 class="services-offerings-title reveal">Types of Offerings</h3>
 
         <div class="services-grid">
 
@@ -263,13 +263,7 @@
             </div>
             <div class="services-card__body">
               <span class="gold-bar"></span>
-              <h3>Civil &amp; Municipal</h3>
-              <p>Engineered mixes for roads, bridges, and infrastructure. Meets all municipal and provincial standards.</p>
-              <ul class="services-card__features">
-                <li>High-strength up to 45 MPa</li>
-                <li>Large-volume capacity up to 1,000 m³</li>
-                <li>Provincial standards compliant</li>
-              </ul>
+              <h3>Civil and municipal concrete</h3>
             </div>
           </article>
 
@@ -285,13 +279,7 @@
             </div>
             <div class="services-card__body">
               <span class="gold-bar"></span>
-              <h3>Commercial</h3>
-              <p>Reliable supply for warehouses, retail, offices, and mixed-use developments. Delivered on your schedule.</p>
-              <ul class="services-card__features">
-                <li>Flexible scheduling</li>
-                <li>Tailored structural mix designs</li>
-                <li>Consistent batching on every load</li>
-              </ul>
+              <h3>Commercial concrete</h3>
             </div>
           </article>
 
@@ -307,26 +295,18 @@
             </div>
             <div class="services-card__body">
               <span class="gold-bar"></span>
-              <h3>Residential</h3>
-              <p>Foundations, driveways, slabs, and patios. Quality concrete for home builders with minimum 1 m³ orders.</p>
-              <ul class="services-card__features">
-                <li>Orders from 1 m³</li>
-                <li>20–40 MPa residential mixes</li>
-                <li>Timely Edmonton delivery</li>
-              </ul>
+              <h3>Residential concrete</h3>
             </div>
           </article>
 
         </div>
 
-        <!-- Callout banner -->
+        <!-- Closing callout -->
         <div class="services-callout reveal">
           <div class="services-callout__inner">
             <div class="services-callout__text">
-              <span class="services-callout__title">All Order Sizes Welcome</span>
               <span class="services-callout__body">
-                Our fleet handles everything from 1 m³ to large-scale pours of 1,000 m³,
-                with trailers and batch mixers of all sizes for reliable, on-time delivery.
+                With a strong focus on quality, consistency, and customer satisfaction, Oil City Ready Mix Ltd. is committed to providing dependable concrete solutions that support the success of every project.
               </span>
             </div>
             <a href="#calculator" class="btn btn-primary">Calculate Your Volume</a>
@@ -348,74 +328,70 @@
           <!-- Left: text content -->
           <div class="corporate-text">
             <span class="section-label reveal">Corporate Structure</span>
-            <h2 class="corporate-heading reveal delay-1">Part of a<br>Stronger Group</h2>
+            <h2 class="corporate-heading reveal delay-1">Corporate Structure</h2>
             <p class="corporate-body reveal delay-2">
-              Oil City Ready Mix Ltd. operates as a key part of the broader
-              <strong>Oil City Holding Ltd.</strong> family of companies. As the parent entity,
-              Oil City Holding Ltd. provides strategic oversight, governance, and direction
-              for all businesses under its umbrella, ensuring operational excellence,
-              financial stability, and adherence to corporate standards across the group.
+              Oil City Ready Mix Ltd. operates as an independent entity within a group of companies comprising separately incorporated businesses with distinct ownership structures, management teams, and governance frameworks.
             </p>
             <p class="corporate-body reveal delay-3">
-              As the business group continues to expand, all new and existing entities are
-              structured as <strong>100% wholly owned subsidiaries</strong> of Oil City Holding Ltd.
-              This structure allows each company to maintain operational independence while
-              benefiting from shared resources, centralized management, and the strategic
-              support of the holding company.
+              Collectively, the group is engaged in a diverse range of business activities, including a concrete ready-mix manufacturing operation, a property management business, and a trucking company specializing in the transportation of materials to and from project sites. This diversity enables the businesses to operate with focused expertise across different sectors while contributing to a broader network of industry experience.
             </p>
             <p class="corporate-body reveal delay-4">
-              By aligning all companies under Oil City Holding Ltd., the group ensures
-              consistent quality, financial integrity, and long-term sustainability, while
-              positioning itself for growth and diversification across construction and
-              other supportive industries.
+              While the companies may collaborate and align on certain operational matters where beneficial, each organization retains full responsibility for its own strategic direction, operational decision-making, and financial performance. This approach supports flexibility and responsiveness at the individual company level, while also allowing for the exchange of industry knowledge and operational efficiencies where appropriate.
             </p>
           </div>
 
-          <!-- Right: hierarchy visual -->
+          <!-- Right: group companies visual -->
           <div class="corporate-chart reveal delay-2">
 
-            <!-- Parent -->
-            <div class="corp-parent">
-              <div class="corp-parent__badge">Parent Company</div>
-              <div class="corp-parent__name">Oil City Holding Ltd.</div>
-              <div class="corp-parent__abbr">OCHL</div>
+            <!-- Top header box -->
+            <div class="corp-group-header">
+              <div class="corp-group-label">Oil City Group Companies</div>
             </div>
 
-            <!-- Connector line -->
-            <div class="corp-connector" aria-hidden="true">
-              <div class="corp-connector__line"></div>
-              <div class="corp-connector__branches">
-                <span></span><span></span><span></span>
-              </div>
+            <!-- Connector: line down to first card -->
+            <div class="corp-flow-connector" aria-hidden="true">
+              <div class="corp-flow-line"></div>
+              <div class="corp-flow-arrowhead"></div>
             </div>
 
-            <!-- Subsidiaries -->
             <div class="corp-subs">
 
               <div class="corp-sub corp-sub--active">
                 <div class="corp-sub__dot"></div>
                 <div class="corp-sub__content">
-                  <span class="corp-sub__abbr">OCRM</span>
-                  <span class="corp-sub__name">Oil City Ready Mix Ltd.</span>
-                  <span class="corp-sub__tag">Ready Mix Concrete</span>
+                  <span class="corp-sub__num">1.</span>
+                  <span class="corp-sub__name">Oil City Ready Mix Ltd. (OCRM)</span>
+                  <span class="corp-sub__tag">Concrete Ready-Mix Manufacturing</span>
                 </div>
+              </div>
+
+              <!-- Arrow between cards -->
+              <div class="corp-flow-connector" aria-hidden="true">
+                <div class="corp-flow-line"></div>
+                <div class="corp-flow-arrowhead"></div>
               </div>
 
               <div class="corp-sub">
                 <div class="corp-sub__dot"></div>
                 <div class="corp-sub__content">
-                  <span class="corp-sub__abbr">OCPM</span>
-                  <span class="corp-sub__name">Oil City Property Management Ltd.</span>
-                  <span class="corp-sub__tag">Property Management</span>
+                  <span class="corp-sub__num">2.</span>
+                  <span class="corp-sub__name">2687531 Alberta Ltd.</span>
+                  <span class="corp-sub__tag">The Property Management Company</span>
                 </div>
+              </div>
+
+              <!-- Arrow between cards -->
+              <div class="corp-flow-connector" aria-hidden="true">
+                <div class="corp-flow-line"></div>
+                <div class="corp-flow-arrowhead"></div>
               </div>
 
               <div class="corp-sub">
                 <div class="corp-sub__dot"></div>
                 <div class="corp-sub__content">
-                  <span class="corp-sub__abbr">OCT</span>
-                  <span class="corp-sub__name">Oil City Trucking Ltd.</span>
-                  <span class="corp-sub__tag">Trucking</span>
+                  <span class="corp-sub__num">3.</span>
+                  <span class="corp-sub__name">2689073 Alberta Ltd.</span>
+                  <span class="corp-sub__tag">The Trucking Company</span>
                 </div>
               </div>
 
@@ -432,10 +408,10 @@
     <!-- ═══════════════════════════════════════════
          SECTION 6 · WHY CHOOSE US (Dramatic Moment)
     ═══════════════════════════════════════════ -->
-    <section class="why-section" id="why" aria-label="Why choose Oil City Ready Mix">
+    <!-- <section class="why-section" id="why" aria-label="Why choose Oil City Ready Mix"> -->
 
       <!-- Full bleed background image with overlay -->
-      <div class="why-bg" aria-hidden="true">
+      <!-- <div class="why-bg" aria-hidden="true">
         <img
           src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1920&q=75"
           alt=""
@@ -484,7 +460,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
 
     <!-- ═══════════════════════════════════════════
@@ -502,80 +478,79 @@
               alt="Concrete mixer truck delivering ready mix"
               loading="lazy" width="800" height="900"
             />
-            <div class="calc-image__badge">
-              <span>10%</span>
-              <small>waste factor<br>included</small>
-            </div>
           </div>
 
           <!-- Right: calculator -->
           <div class="calc-content">
-            <span class="section-label reveal">Volume Calculator</span>
-            <h2 class="reveal delay-1">How Much Concrete<br>Do You Need?</h2>
-            <p class="reveal delay-2">Enter your measurements to estimate your required volume. Results include a 10% waste factor.</p>
+            <h2 class="reveal delay-1">Concrete Quantity Calculations</h2>
 
             <div class="calc-wrapper reveal delay-2">
 
               <div class="calc-tabs" role="tablist">
-                <button class="calc-tab active" data-tab="flat" role="tab" aria-selected="true"  aria-controls="panel-flat">Flat Area (Slab)</button>
-                <button class="calc-tab"        data-tab="pile" role="tab" aria-selected="false" aria-controls="panel-pile">Pile / Cylinder</button>
+                <button class="calc-tab active" data-tab="flat" role="tab" aria-selected="true"  aria-controls="panel-flat">Flat Area</button>
+                <button class="calc-tab"        data-tab="pile" role="tab" aria-selected="false" aria-controls="panel-pile">Pile (Cylinder)</button>
               </div>
 
               <div class="calc-panel active" id="panel-flat" role="tabpanel">
                 <form id="calc-flat" class="calc-form" novalidate>
-                  <p class="calc-note">Fields marked * are required. Results in cubic metres (m³).</p>
+                  <p class="calc-panel-heading">Volume calculator for Flat Area</p>
+                  <p class="calc-note">Insert measurement in * marked fields</p>
                   <div class="calc-fields">
                     <div class="form-group">
-                      <label class="form-label" for="flat-length">Length (ft) *</label>
+                      <label class="form-label" for="flat-length">Length in Feet *</label>
                       <input class="form-input" type="number" id="flat-length" min="0" step="0.1" placeholder="e.g. 20" required />
                     </div>
                     <div class="form-group">
-                      <label class="form-label" for="flat-width">Width (ft) *</label>
+                      <label class="form-label" for="flat-width">Width in Feet *</label>
                       <input class="form-input" type="number" id="flat-width" min="0" step="0.1" placeholder="e.g. 15" required />
                     </div>
                     <div class="form-group">
-                      <label class="form-label" for="flat-thick">Thickness (in) *</label>
+                      <label class="form-label" for="flat-thick">Thickness in inches *</label>
                       <input class="form-input" type="number" id="flat-thick" min="0" step="0.25" placeholder="e.g. 4" required />
                     </div>
                   </div>
                   <div class="calc-result">
-                    <span class="calc-result__label">Required Quantity</span>
+                    <span class="calc-result__label">Required Quantity in Cubic Meters</span>
                     <span class="calc-result__value" id="flat-result">—</span>
-                    <span class="calc-result__note">Includes 10% waste factor</span>
                   </div>
                 </form>
               </div>
 
               <div class="calc-panel" id="panel-pile" role="tabpanel">
                 <form id="calc-pile" class="calc-form" novalidate>
-                  <p class="calc-note">Fields marked * are required. Results in cubic metres (m³).</p>
+                  <p class="calc-panel-heading">Volume calculator for Pile (Cylinder)</p>
+                  <p class="calc-note">Insert measurement in * marked fields</p>
                   <div class="calc-fields">
                     <div class="form-group">
-                      <label class="form-label" for="pile-radius">Radius (in) *</label>
+                      <label class="form-label" for="pile-radius">Radius in Inches *</label>
                       <input class="form-input" type="number" id="pile-radius" min="0" step="0.5" placeholder="e.g. 6" required />
                     </div>
                     <div class="form-group">
-                      <label class="form-label" for="pile-height">Height (ft) *</label>
+                      <label class="form-label" for="pile-height">Height in Feet *</label>
                       <input class="form-input" type="number" id="pile-height" min="0" step="0.5" placeholder="e.g. 8" required />
                     </div>
                     <div class="form-group">
-                      <label class="form-label" for="pile-count">No. of Piles *</label>
+                      <label class="form-label" for="pile-count">Number of piles *</label>
                       <input class="form-input" type="number" id="pile-count" min="1" step="1" placeholder="e.g. 4" required />
                     </div>
                   </div>
                   <div class="calc-result">
-                    <span class="calc-result__label">Required Quantity</span>
+                    <span class="calc-result__label">Required Quantity in Cubic Meters</span>
                     <span class="calc-result__value" id="pile-result">—</span>
-                    <span class="calc-result__note">Includes 10% waste factor</span>
                   </div>
                 </form>
               </div>
 
-              <p class="calc-disclaimer">
-                This is an estimate only. Contact us for a precise quote based on your specific mix design and project.
-              </p>
-
             </div>
+
+            <div class="calc-disclaimer-block reveal delay-3">
+              <p class="calc-disclaimer-title">Disclaimer on Quantity Estimates</p>
+              <p>Concrete quantities provided by this calculator are estimates based solely on user inputs and are for guidance purposes only. Actual quantities may vary depending on site conditions and execution.</p>
+              <p>For surface pours, variations in subgrade levelness, preparation, and formwork accuracy can impact the final volume required. Uneven or irregular surfaces may lead to higher or lower concrete consumption than estimated.</p>
+              <p>For pile or cylindrical pours, quantities assume accurate excavation to specified dimensions. In practice, over-excavation, soil instability, or irregular borehole shapes may affect actual concrete usage.</p>
+              <p>Users should allow for reasonable contingencies and verify quantities with site professionals prior to ordering. No liability is assumed for any variance between estimated and actual quantities.</p>
+            </div>
+
           </div>
 
         </div>
@@ -699,7 +674,8 @@
                 </div>
                 <div>
                   <span class="contact-list__label">Hours</span>
-                  <span class="contact-list__value">Monday – Saturday &nbsp;·&nbsp; 8:00 AM – 5:00 PM</span>
+                  <span class="contact-list__value">Monday – Friday &nbsp;·&nbsp; 8:00 AM – 5:00 PM</span>
+                  <span class="contact-list__value">Saturday &nbsp;·&nbsp; 8:00 AM – 1:00 PM</span>
                 </div>
               </li>
             </ul>
