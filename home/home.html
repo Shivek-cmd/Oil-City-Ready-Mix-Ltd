@@ -79,7 +79,7 @@
   <!-- Background video -->
   <div class="hero-video-wrap" aria-hidden="true">
   <video class="hero-video" autoplay muted loop playsinline>
-    <source src="../assets/Concrete_poured_onto_202604250012.mp4" type="video/mp4">
+    <source src="https://assets.cdn.filesafe.space/RC8l3LS7ryUTnyRg3oDk/media/69ebbb6c9fe87a9994b6e42f.mp4" type="video/mp4">
   </video>
   <div class="hero-video-overlay"></div>
 </div>
@@ -98,7 +98,7 @@
 </h1>
 
     <div class="hero-sub-grid reveal delay-4">
-      <p class="hero-sub">
+      <p class="hero-sub test">
         Oil City Ready Mix Ltd. is an emerging and trusted name in the Edmonton concrete industry. Serving commercial, civil, and residential construction projects, we are committed to delivering high-quality ready mix solutions tailored to each client's needs.
       </p>
       <p class="hero-sub hero-sub--bordered">
@@ -469,91 +469,87 @@
     <section class="section section--alt calculator-section" id="calculator" aria-label="Concrete Volume Calculator">
       <div class="container">
 
-        <div class="calc-layout">
+        <!-- Section header -->
+        <div class="calc-header">
+          <span class="section-label reveal">Calculator</span>
+          <h2 class="reveal delay-1">Concrete Quantity Calculations</h2>
+        </div>
 
-          <!-- Left: image -->
-          <div class="calc-image reveal-left">
-            <img
-              src="https://assets.cdn.filesafe.space/pDreylt0DE2IrmVNC9Mn/media/69de8aebb935a2d764c14488.png"
-              alt="Concrete mixer truck delivering ready mix"
-              loading="lazy" width="800" height="900"
-            />
+        <!-- Two calculators side by side -->
+        <div class="calc-cards-grid">
+
+          <!-- Flat Area -->
+          <div class="calc-card reveal delay-1">
+            <div class="calc-card__header">
+              <h3 class="calc-card__title">Volume calculator for Flat Area</h3>
+              <p class="calc-note">Insert measurement in * marked fields</p>
+            </div>
+            <form id="calc-flat" class="calc-form" novalidate>
+              <div class="calc-fields-stack">
+                <div class="form-group">
+                  <label class="form-label" for="flat-length">Length in Feet *</label>
+                  <input class="form-input" type="number" id="flat-length" min="0" step="0.1" placeholder="e.g. 20" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="flat-width">Width in Feet *</label>
+                  <input class="form-input" type="number" id="flat-width" min="0" step="0.1" placeholder="e.g. 15" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="flat-thick">Thickness in inches *</label>
+                  <input class="form-input" type="number" id="flat-thick" min="0" step="0.25" placeholder="e.g. 4" required />
+                </div>
+              </div>
+              <div class="calc-result">
+                <span class="calc-result__label">Required Quantity in Cubic Meters</span>
+                <span class="calc-result__value" id="flat-result">—</span>
+              </div>
+            </form>
           </div>
 
-          <!-- Right: calculator -->
-          <div class="calc-content">
-            <h2 class="reveal delay-1">Concrete Quantity Calculations</h2>
-
-            <div class="calc-wrapper reveal delay-2">
-
-              <div class="calc-tabs" role="tablist">
-                <button class="calc-tab active" data-tab="flat" role="tab" aria-selected="true"  aria-controls="panel-flat">Flat Area</button>
-                <button class="calc-tab"        data-tab="pile" role="tab" aria-selected="false" aria-controls="panel-pile">Pile (Cylinder)</button>
-              </div>
-
-              <div class="calc-panel active" id="panel-flat" role="tabpanel">
-                <form id="calc-flat" class="calc-form" novalidate>
-                  <p class="calc-panel-heading">Volume calculator for Flat Area</p>
-                  <p class="calc-note">Insert measurement in * marked fields</p>
-                  <div class="calc-fields">
-                    <div class="form-group">
-                      <label class="form-label" for="flat-length">Length in Feet *</label>
-                      <input class="form-input" type="number" id="flat-length" min="0" step="0.1" placeholder="e.g. 20" required />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="flat-width">Width in Feet *</label>
-                      <input class="form-input" type="number" id="flat-width" min="0" step="0.1" placeholder="e.g. 15" required />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="flat-thick">Thickness in inches *</label>
-                      <input class="form-input" type="number" id="flat-thick" min="0" step="0.25" placeholder="e.g. 4" required />
-                    </div>
-                  </div>
-                  <div class="calc-result">
-                    <span class="calc-result__label">Required Quantity in Cubic Meters</span>
-                    <span class="calc-result__value" id="flat-result">—</span>
-                  </div>
-                </form>
-              </div>
-
-              <div class="calc-panel" id="panel-pile" role="tabpanel">
-                <form id="calc-pile" class="calc-form" novalidate>
-                  <p class="calc-panel-heading">Volume calculator for Pile (Cylinder)</p>
-                  <p class="calc-note">Insert measurement in * marked fields</p>
-                  <div class="calc-fields">
-                    <div class="form-group">
-                      <label class="form-label" for="pile-radius">Radius in Inches *</label>
-                      <input class="form-input" type="number" id="pile-radius" min="0" step="0.5" placeholder="e.g. 6" required />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="pile-height">Height in Feet *</label>
-                      <input class="form-input" type="number" id="pile-height" min="0" step="0.5" placeholder="e.g. 8" required />
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label" for="pile-count">Number of piles *</label>
-                      <input class="form-input" type="number" id="pile-count" min="1" step="1" placeholder="e.g. 4" required />
-                    </div>
-                  </div>
-                  <div class="calc-result">
-                    <span class="calc-result__label">Required Quantity in Cubic Meters</span>
-                    <span class="calc-result__value" id="pile-result">—</span>
-                  </div>
-                </form>
-              </div>
-
+          <!-- Pile (Cylinder) -->
+          <div class="calc-card reveal delay-2">
+            <div class="calc-card__header">
+              <h3 class="calc-card__title">Volume calculator for Pile (Cylinder)</h3>
+              <p class="calc-note">Insert measurement in * marked fields</p>
             </div>
-
-            <div class="calc-disclaimer-block reveal delay-3">
-              <p class="calc-disclaimer-title">Disclaimer on Quantity Estimates</p>
-              <p>Concrete quantities provided by this calculator are estimates based solely on user inputs and are for guidance purposes only. Actual quantities may vary depending on site conditions and execution.</p>
-              <p>For surface pours, variations in subgrade levelness, preparation, and formwork accuracy can impact the final volume required. Uneven or irregular surfaces may lead to higher or lower concrete consumption than estimated.</p>
-              <p>For pile or cylindrical pours, quantities assume accurate excavation to specified dimensions. In practice, over-excavation, soil instability, or irregular borehole shapes may affect actual concrete usage.</p>
-              <p>Users should allow for reasonable contingencies and verify quantities with site professionals prior to ordering. No liability is assumed for any variance between estimated and actual quantities.</p>
-            </div>
-
+            <form id="calc-pile" class="calc-form" novalidate>
+              <div class="calc-fields-stack">
+                <div class="form-group">
+                  <label class="form-label" for="pile-radius">Radius in Inches *</label>
+                  <input class="form-input" type="number" id="pile-radius" min="0" step="0.5" placeholder="e.g. 6" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="pile-height">Height in Feet *</label>
+                  <input class="form-input" type="number" id="pile-height" min="0" step="0.5" placeholder="e.g. 8" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="pile-count">Number of piles *</label>
+                  <input class="form-input" type="number" id="pile-count" min="1" step="1" placeholder="e.g. 4" required />
+                </div>
+              </div>
+              <div class="calc-result">
+                <span class="calc-result__label">Required Quantity in Cubic Meters</span>
+                <span class="calc-result__value" id="pile-result">—</span>
+              </div>
+            </form>
           </div>
 
         </div>
+
+        <!-- Disclaimer — accordion -->
+        <div class="calc-disclaimer-block reveal delay-3">
+          <button class="calc-disclaimer-toggle" aria-expanded="false" aria-controls="disclaimer-body" type="button">
+            <span>Disclaimer on Quantity Estimates</span>
+            <svg class="calc-disclaimer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="calc-disclaimer-body" id="disclaimer-body">
+            <p>Concrete quantities provided by this calculator are estimates based solely on user inputs and are for guidance purposes only. Actual quantities may vary depending on site conditions and execution.</p>
+            <p>For surface pours, variations in subgrade levelness, preparation, and formwork accuracy can impact the final volume required. Uneven or irregular surfaces may lead to higher or lower concrete consumption than estimated.</p>
+            <p>For pile or cylindrical pours, quantities assume accurate excavation to specified dimensions. In practice, over-excavation, soil instability, or irregular borehole shapes may affect actual concrete usage.</p>
+            <p>Users should allow for reasonable contingencies and verify quantities with site professionals prior to ordering. No liability is assumed for any variance between estimated and actual quantities.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -711,6 +707,19 @@
 
   <!-- Global scripts — direct load, no fetch dependency -->
   <script src="/global/global.js" defer></script>
+
+  <!-- Disclaimer accordion -->
+  <script>
+    (function () {
+      var toggle = document.querySelector('.calc-disclaimer-toggle');
+      var body   = document.getElementById('disclaimer-body');
+      if (!toggle || !body) return;
+      toggle.addEventListener('click', function () {
+        var open = body.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+    })();
+  </script>
 
   <!-- ── Hero Carousel Script (page-specific) ── -->
   <script>
