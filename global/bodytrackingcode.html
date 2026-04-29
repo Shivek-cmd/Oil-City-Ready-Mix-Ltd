@@ -210,7 +210,7 @@
       });
     });
   }
-
+ 
 
   /* ─────────────────────────────────────────────
    * 6. FLOATING CONTACT BUTTONS (WhatsApp + Call)
@@ -218,13 +218,13 @@
  function initFloatingButtons() {
     var style = document.createElement('style');
     style.textContent = [
-      '.floating-contact{position:fixed;bottom:28px;right:24px;display:flex;flex-direction:column;gap:12px;z-index:var(--z-toast, 500);}',
-      '.floating-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,0.18);transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s ease;border:none;cursor:pointer;}',
+      '.floating-contact{position:fixed;bottom:95px;right:24px;display:flex;flex-direction:column;gap:16px;z-index:var(--z-toast, 500);}',
+      '.floating-btn{width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,0.18);transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s ease;border:none;cursor:pointer;}',
       '.floating-btn:hover{transform:scale(1.12);box-shadow:0 8px 28px rgba(0,0,0,0.22);opacity:1;}',
       '.floating-btn--whatsapp{background:#25D366;}',
-      '.floating-btn--call{background:#C9A962;}',
+      '.floating-btn--call{background:#C9A962FF;}',
       '.floating-btn svg{display:block;flex-shrink:0;}',
-      '@media(max-width:540px){.floating-contact{bottom:18px;right:14px;}.floating-btn{width:46px;height:46px;}}'
+      '@media(max-width:540px){.floating-contact{bottom:85px;right:14px;}.floating-btn{width:55px;height:55px;}}'
     ].join('');
     document.head.appendChild(style);
 
@@ -254,7 +254,7 @@
     initCalculator();
     initQuoteForm();
     initFAQ();
-//     initFloatingButtons();
+     initFloatingButtons();
   }
 
   if (document.readyState === 'loading') {
