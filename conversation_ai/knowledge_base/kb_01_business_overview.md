@@ -35,7 +35,7 @@ We prioritize safety, quality, and strict adherence to industry standards, ensur
 | Address | 507, 509 15 Avenue, Nisku, AB T9E 7M6 |
 | Phone | 780-318-4949 |
 | Email | accounts@oilcityreadymix.net |
-| Working Hours | Monday – Saturday, 8:00 AM – 5:00 PM |
+| Working Hours | Monday – Friday, 8:00 AM – 5:00 PM; Saturday, 8:00 AM – 1:00 PM |
 | Region Served | Edmonton, Alberta and surrounding areas |
 
 ---
@@ -58,7 +58,7 @@ Other subsidiaries under OCHL:
 A: Our address is 507, 509 15 Avenue, Nisku, AB T9E 7M6.
 
 **Q: What are your working hours?**
-A: Monday through Saturday, 8:00 AM to 5:00 PM.
+A: Monday through Friday, 8:00 AM to 5:00 PM. Saturday, 8:00 AM to 1:00 PM.
 
 **Q: What areas do you deliver to?**
 A: We serve Edmonton, Alberta and surrounding areas including Nisku, Leduc, Spruce Grove, Sherwood Park, and the greater Edmonton region.
