@@ -66,10 +66,10 @@
   <script src="/global/loader.js"></script>
 </head>
 <body>
-
+  <script src="https://beta.leadconnectorhq.com/loader.js" data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69e7b3db1024ff4a2093754d"></script>
   <div id="global-header"></div>
 
-  <main>
+  <main>  
   <!-- ═══════════════════════════════════════════
          SECTION 1 · HERO — Split layout
     ═══════════════════════════════════════════ -->
@@ -151,7 +151,7 @@
             <!-- <span class="section-label reveal">Who We Are</span> -->
 
             <h2 class="about-heading reveal delay-1">
-              <span style="color: var(--color-primary);">Your Trusted Concrete Partner</span> – Oil City Ready Mix LTD
+              <span style="color: var(--color-primary);">Your Trusted Concrete Partner</span> Oil City Ready Mix LTD
             </h2>
 
             <p class="about-body reveal delay-2">
@@ -205,7 +205,7 @@
             <!-- <span class="section-label reveal">Why Choose Us</span> -->
 
             <h2 class="about-heading reveal delay-1">
-              Why We're Our Customers First Choice
+              Why We are Our Customers First Choice
             </h2>
 
             <p class="about-body reveal delay-2">
@@ -287,17 +287,7 @@
           </article>
 
         </div>
-       
-        <!-- Closing callout -->
-        <div class="services-callout reveal">
-          <span class="services-callout__body">
-            With a strong focus on quality, consistency, and customer satisfaction, Oil City Ready Mix Ltd. is committed to providing dependable concrete solutions that support the success of every project.
-          </span>
-        </div>
-        <div class="services-callout-cta reveal delay-2">
-          <a href="#calculator" class="btn btn-outline reveal delay-4">Calculate your estimated concrete volume</a>
-        </div>
-
+        
          <!-- Order Sizes + Concrete Strengths — open text columns -->
         <div class="services-specs">
           <div class="services-spec reveal delay-1">
@@ -309,6 +299,17 @@
             <p class="services-spec__body">Our ready mix concrete is available in a range of strengths from 20 MPa to 45 MPa, ensuring suitability for a wide variety of structural and non-structural applications. Each mix is carefully designed and produced to meet industry standards while aligning with specific project requirements.</p>
           </div>
         </div>
+       
+        <!-- Closing callout -->
+        <div class="services-callout reveal">
+          <span class="services-callout__body">
+            With a strong focus on quality, consistency, and customer satisfaction, Oil City Ready Mix Ltd. is committed to providing dependable concrete solutions that support the success of every project.
+          </span>
+        </div>
+        <div class="services-callout-cta reveal delay-2">
+          <a href="#calculator" class="btn btn-outline reveal delay-4">Calculate your estimated concrete volume</a>
+        </div>
+
 
       </div>
     </section>
@@ -345,48 +346,24 @@
               <div class="corp-group-label">Oil City Group Companies</div>
             </div>
 
-            <!-- Connector: line down to first card -->
-            <div class="corp-flow-connector" aria-hidden="true">
-              <div class="corp-flow-line"></div>
-              <div class="corp-flow-arrowhead"></div>
-            </div>
-
             <div class="corp-subs">
 
               <div class="corp-sub corp-sub--active">
-                <!-- <div class="corp-sub__dot"></div> -->
                 <div class="corp-sub__content">
-                  <!-- <span class="corp-sub__num">1.</span> -->
                   <span class="corp-sub__name">Oil City Ready Mix Ltd. (OCRM)</span>
                   <span class="corp-sub__tag">Concrete Ready-Mix Manufacturing</span>
                 </div>
               </div>
 
-              <!-- Arrow between cards -->
-              <div class="corp-flow-connector" aria-hidden="true">
-                <div class="corp-flow-line"></div>
-                <div class="corp-flow-arrowhead"></div>
-              </div>
-
               <div class="corp-sub">
-                <!-- <div class="corp-sub__dot"></div> -->
                 <div class="corp-sub__content">
-                  <!-- <span class="corp-sub__num">2.</span> -->
                   <span class="corp-sub__name">2687531 Alberta Ltd.</span>
                   <span class="corp-sub__tag">The Property Management Company</span>
                 </div>
               </div>
 
-              <!-- Arrow between cards -->
-              <div class="corp-flow-connector" aria-hidden="true">
-                <div class="corp-flow-line"></div>
-                <div class="corp-flow-arrowhead"></div>
-              </div>
-
               <div class="corp-sub">
-                <!-- <div class="corp-sub__dot"></div> -->
                 <div class="corp-sub__content">
-                  <!-- <span class="corp-sub__num">3.</span> -->
                   <span class="corp-sub__name">2689073 Alberta Ltd.</span>
                   <span class="corp-sub__tag">The Trucking Company</span>
                 </div>
@@ -667,8 +644,14 @@
                 </div>
                 <div>
                   <span class="contact-list__label">Hours</span>
-                  <span class="contact-list__value">Monday – Friday &nbsp;·&nbsp; 8:00 AM – 5:00 PM</span>
-                  <span class="contact-list__value">Saturday &nbsp;·&nbsp; 8:00 AM – 1:00 PM</span>
+                  <div class="contact-hours">
+                    <span class="contact-hours__day">Monday – Friday</span>
+                    <span class="contact-hours__sep">&nbsp;·&nbsp;</span>
+                    <span class="contact-hours__time">8:00 AM – 5:00 PM</span>
+                    <span class="contact-hours__day">Saturday</span>
+                    <span class="contact-hours__sep">&nbsp;·&nbsp;</span>
+                    <span class="contact-hours__time">8:00 AM – 1:00 PM</span>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -697,26 +680,12 @@
         </div>
       </div>
     </section>
-
-  </main>
+</main>
 
   <div id="global-footer"></div>
 
   <!-- Global scripts — direct load, no fetch dependency -->
   <script src="/global/global.js" defer></script>
-
-  <!-- Disclaimer accordion -->
-  <script>
-    (function () {
-      var toggle = document.querySelector('.calc-disclaimer-toggle');
-      var body   = document.getElementById('disclaimer-body');
-      if (!toggle || !body) return;
-      toggle.addEventListener('click', function () {
-        var open = body.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', String(open));
-      });
-    })();
-  </script>
 
   <!-- ── Hero Carousel Script (page-specific) ── -->
   <script>

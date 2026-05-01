@@ -47,6 +47,8 @@
     line-height: 1.65;
     max-width: 28ch;
     margin-bottom: var(--space-8);
+    text-align: justify;
+    text-align-last: left;
   }
 
   .footer-brand__parent {
@@ -70,6 +72,7 @@
     text-transform: uppercase;
     color: var(--color-primary);
     margin-bottom: var(--space-6);
+    white-space: nowrap;
   }
 
   .footer-col__links {
@@ -149,6 +152,25 @@
     font-size: var(--text-sm);
     color: var(--color-text);
     margin: 0;
+  }
+
+  /* Hours grid — aligns times in a column */
+  .footer-hours-grid {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    column-gap: 0;
+    row-gap: 2px;
+    align-items: baseline;
+  }
+
+  .footer-hours-grid__day,
+  .footer-hours-grid__time {
+    font-size: var(--text-sm);
+    color: var(--color-text);
+  }
+
+  .footer-hours-grid__sep {
+    color: var(--color-text-muted);
   }
 
   /* ── Gold bar divider ── */
@@ -318,8 +340,14 @@
 
       <div class="footer-hours">
         <p class="footer-hours__label">Working Hours</p>
-        <p class="footer-hours__time">Monday – Friday &nbsp;·&nbsp; 8:00 AM – 5:00 PM</p>
-        <p class="footer-hours__time">Saturday &nbsp;·&nbsp; 8:00 AM – 1:00 PM</p>
+        <div class="footer-hours-grid">
+          <span class="footer-hours-grid__day">Monday – Friday</span>
+          <span class="footer-hours-grid__sep">&nbsp;·&nbsp;</span>
+          <span class="footer-hours-grid__time">8:00 AM – 5:00 PM</span>
+          <span class="footer-hours-grid__day">Saturday</span>
+          <span class="footer-hours-grid__sep">&nbsp;·&nbsp;</span>
+          <span class="footer-hours-grid__time">8:00 AM – 1:00 PM</span>
+        </div>
       </div>
     </div>
 

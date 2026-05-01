@@ -291,7 +291,6 @@ input, textarea, select { font-family: var(--font-body); }
   transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
 }
 .reveal-right.visible { opacity: 1; transform: translateX(0); }
-
 /* On mobile, collapse horizontal slides to vertical to prevent overflow */
 @media (max-width: 767px) {
   .reveal-left,
@@ -303,7 +302,6 @@ input, textarea, select { font-family: var(--font-body); }
     transform: translateY(0);
   }
 }
-
 /* Scale in */
 .reveal-scale {
   opacity: 0;
